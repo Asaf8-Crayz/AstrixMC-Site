@@ -12,16 +12,16 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
+            font-family: 'Arial', sans-serif;
+            background: #000000;
+            color: #FF0000;
             min-height: 100vh;
         }
         
         header {
-            background: rgba(0, 0, 0, 0.8);
+            background: #CC0000;
             padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 28px;
             font-weight: bold;
-            color: #4CAF50;
+            color: #FFFFFF;
         }
         
         .nav-links {
@@ -52,14 +52,14 @@
         }
         
         .nav-links a {
-            color: #fff;
+            color: #FFFFFF;
             text-decoration: none;
             transition: color 0.3s;
             cursor: pointer;
         }
         
         .nav-links a:hover {
-            color: #4CAF50;
+            color: #FF0000;
         }
         
         .auth-buttons {
@@ -69,30 +69,32 @@
         
         button {
             padding: 10px 20px;
-            border: none;
+            border: 2px solid #FF0000;
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
             transition: all 0.3s;
+            font-weight: bold;
         }
         
         .btn-login {
-            background: #2196F3;
-            color: white;
+            background: transparent;
+            color: #FF0000;
         }
         
         .btn-login:hover {
-            background: #1976D2;
+            background: #FF0000;
+            color: #000000;
             transform: translateY(-2px);
         }
         
         .btn-register {
-            background: #4CAF50;
-            color: white;
+            background: #FF0000;
+            color: #000000;
         }
         
         .btn-register:hover {
-            background: #45a049;
+            background: #CC0000;
             transform: translateY(-2px);
         }
         
@@ -104,27 +106,29 @@
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.5);
+            color: #FF0000;
         }
         
         .hero p {
             font-size: 20px;
             margin-bottom: 30px;
-            opacity: 0.9;
+            color: #CCCCCC;
         }
         
         .server-info {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(204, 0, 0, 0.1);
+            border: 2px solid #FF0000;
             padding: 30px;
             border-radius: 10px;
-            backdrop-filter: blur(10px);
             max-width: 600px;
             margin: 0 auto;
             margin-bottom: 40px;
         }
         
         .server-ip {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #FF0000;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -138,26 +142,29 @@
             font-size: 24px;
             font-weight: bold;
             font-family: 'Courier New', monospace;
+            color: #FF0000;
         }
         
         .btn-copy {
-            background: #FF9800;
-            color: white;
+            background: #FF0000;
+            color: #000000;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
             transition: all 0.3s;
+            font-weight: bold;
         }
         
         .btn-copy:hover {
-            background: #F57C00;
+            background: #CC0000;
             transform: translateY(-2px);
         }
         
         .btn-copy.copied {
-            background: #4CAF50;
+            background: #00FF00;
+            color: #000000;
         }
         
         .player-info {
@@ -175,12 +182,12 @@
         .player-count {
             font-size: 32px;
             font-weight: bold;
-            color: #4CAF50;
+            color: #FF0000;
         }
         
         .player-label {
             font-size: 14px;
-            opacity: 0.8;
+            color: #CCCCCC;
             margin-top: 5px;
         }
         
@@ -188,7 +195,7 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            background: #4CAF50;
+            background: #FF0000;
             border-radius: 50%;
             margin-right: 8px;
             animation: pulse 2s infinite;
@@ -207,7 +214,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             animation: fadeIn 0.3s;
         }
         
@@ -218,12 +225,13 @@
         
         .modal-content {
             background: #1a1a1a;
+            border: 2px solid #FF0000;
             margin: 10% auto;
             padding: 30px;
             border-radius: 10px;
             width: 90%;
             max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
             animation: slideIn 0.3s;
         }
         
@@ -239,7 +247,7 @@
         }
         
         .close {
-            color: #aaa;
+            color: #FF0000;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -248,12 +256,12 @@
         }
         
         .close:hover {
-            color: #fff;
+            color: #FFFFFF;
         }
         
         .modal h2 {
             margin-bottom: 20px;
-            color: #4CAF50;
+            color: #FF0000;
         }
         
         .form-group {
@@ -264,6 +272,7 @@
             display: block;
             margin-bottom: 5px;
             font-size: 14px;
+            color: #FF0000;
         }
         
         input[type="text"],
@@ -271,26 +280,27 @@
         input[type="password"] {
             width: 100%;
             padding: 12px;
-            border: 1px solid #444;
+            border: 1px solid #FF0000;
             border-radius: 5px;
             background: #2a2a2a;
-            color: #fff;
+            color: #FF0000;
             font-size: 14px;
             transition: border-color 0.3s;
         }
         
-        input[type="text"],
-        input[type="email"],
+        input[type="text"]:focus,
+        input[type="email"]:focus,
         input[type="password"]:focus {
             outline: none;
-            border-color: #4CAF50;
+            border-color: #FFFFFF;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
         }
         
         .form-group button {
             width: 100%;
             padding: 12px;
-            background: #4CAF50;
-            color: white;
+            background: #FF0000;
+            color: #000000;
             border: none;
             border-radius: 5px;
             font-size: 16px;
@@ -300,7 +310,7 @@
         }
         
         .form-group button:hover {
-            background: #45a049;
+            background: #CC0000;
             transform: translateY(-2px);
         }
         
@@ -308,24 +318,25 @@
             text-align: center;
             margin-top: 15px;
             font-size: 14px;
+            color: #CCCCCC;
         }
         
         .form-footer a {
-            color: #4CAF50;
+            color: #FF0000;
             cursor: pointer;
             text-decoration: underline;
         }
         
         .form-footer a:hover {
-            opacity: 0.8;
+            color: #FFFFFF;
         }
         
         footer {
-            background: rgba(0, 0, 0, 0.9);
+            background: #CC0000;
             padding: 40px 20px;
             text-align: center;
             margin-top: 60px;
-            border-top: 1px solid #444;
+            border-top: 2px solid #FF0000;
         }
         
         .footer-content {
@@ -342,13 +353,14 @@
         }
         
         .footer-links a {
-            color: #fff;
+            color: #000000;
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: bold;
         }
         
         .footer-links a:hover {
-            color: #4CAF50;
+            color: #FFFFFF;
         }
         
         .social-links {
@@ -361,18 +373,19 @@
         .social-links a {
             width: 40px;
             height: 40px;
-            background: #4CAF50;
+            background: #FF0000;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #000000;
             text-decoration: none;
             transition: all 0.3s;
+            font-weight: bold;
         }
         
         .social-links a:hover {
-            background: #45a049;
+            background: #FFFFFF;
             transform: translateY(-3px);
         }
         
@@ -380,13 +393,14 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #4CAF50;
-            color: white;
+            background: #FF0000;
+            color: #000000;
             padding: 15px 20px;
             border-radius: 5px;
             display: none;
             z-index: 2000;
             animation: slideInRight 0.3s;
+            font-weight: bold;
         }
         
         @keyframes slideInRight {
@@ -451,10 +465,10 @@
     <section class="hero" id="hero">
         <div class="container">
             <h1>🏆 AstrixMC'ye Hoş Geldiniz</h1>
-            <p>Hayallerinin Minecraft sunucusu - Eğlen, Keşfet, Kazanıştır!</p>
+            <p>Minecraft Sunucusunda Eğlen, Kazan, Kazanıştır!</p>
             
             <div class="server-info">
-                <h3 style="margin-bottom: 20px;">Sunucuya Bağlan</h3>
+                <h3 style="margin-bottom: 20px; color: #FF0000;">Sunucuya Bağlan</h3>
                 
                 <div class="server-ip">
                     <span class="ip-text">astrixmc.mcsvtr.online</span>
@@ -465,7 +479,7 @@
                     <div class="player-stat">
                         <div>
                             <span class="status-indicator"></span>
-                            <span style="font-size: 18px;">ONLINE</span>
+                            <span style="font-size: 18px; color: #FF0000;">ONLINE</span>
                         </div>
                         <div class="player-label">Sunucu Durumu</div>
                     </div>
@@ -559,7 +573,7 @@
                 <a href="https://twitter.com" target="_blank" title="Twitter">𝕏</a>
             </div>
             
-            <p>&copy; 2026 AstrixMC. Tüm Hakları Saklıdır.</p>
+            <p style="color: #000000; font-weight: bold;">&copy; 2026 AstrixMC. Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
 
@@ -669,14 +683,14 @@
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Simulate live player count (replace with real API later)
+        // Simulate live player count
         function updatePlayerCount() {
             const count = Math.floor(Math.random() * 50) + 5;
             document.getElementById('player-count').textContent = count;
         }
 
         updatePlayerCount();
-        setInterval(updatePlayerCount, 30000); // Update every 30 seconds
+        setInterval(updatePlayerCount, 30000);
     </script>
 </body>
 </html>
