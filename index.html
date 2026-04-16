@@ -501,11 +501,11 @@
 
     <section class="hero" id="hero">
         <div class="container">
-            <h1> AstrixMC'ye Hoş Geldiniz</h1>
+            <h1>🎮 AstrixMC'ye Hoş Geldiniz</h1>
             <p>En İyi Minecraft MiniGames Deneyimi</p>
             
             <div class="server-info">
-                <button class="play-button" onclick="copyIP()">📋 AstrixMC.mcsvtr.online</button>
+                <button class="play-button" onclick="copyIP()">📋 PLAY.ASTRIXMC.COM</button>
                 
                 <div class="player-info">
                     <div class="player-stat">
@@ -560,6 +560,35 @@
         </div>
     </div>
 
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>📝 Kayıt Ol</h2>
+            <form onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="reg-username">Kullanıcı Adı:</label>
+                    <input type="text" id="reg-username" placeholder="Oyuncu Adı" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">E-posta:</label>
+                    <input type="email" id="reg-email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Şifre:</label>
+                    <input type="password" id="reg-password" placeholder="••••••••" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password-confirm">Şifre Tekrar:</label>
+                    <input type="password" id="reg-password-confirm" placeholder="••••••••" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Kayıt Ol</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Notification -->
     <div class="notification" id="notification"></div>
 
@@ -590,10 +619,22 @@
             document.getElementById('loginModal').style.display = 'none';
         }
 
+        function openRegisterModal() {
+            document.getElementById('registerModal').style.display = 'block';
+        }
+
+        function closeRegisterModal() {
+            document.getElementById('registerModal').style.display = 'none';
+        }
+
         window.onclick = function(event) {
             let loginModal = document.getElementById('loginModal');
+            let registerModal = document.getElementById('registerModal');
             if (event.target === loginModal) {
                 loginModal.style.display = 'none';
+            }
+            if (event.target === registerModal) {
+                registerModal.style.display = 'none';
             }
         }
 
@@ -612,6 +653,25 @@
             
             setTimeout(() => {
                 showNotification(`Hoş geldiniz! ✓`);
+            }, 1500);
+        }
+
+        function handleRegister(event) {
+            event.preventDefault();
+            const username = document.getElementById('reg-username').value;
+            const password = document.getElementById('reg-password').value;
+            const confirmPassword = document.getElementById('reg-password-confirm').value;
+            
+            if (password !== confirmPassword) {
+                showNotification('⚠️ Şifreler eşleşmiyor!');
+                return;
+            }
+            
+            showNotification(`${username} olarak kayıt oluşturuluyor...`);
+            closeRegisterModal();
+            
+            setTimeout(() => {
+                showNotification(`Kayıt başarılı! Hoş geldiniz 🎉`);
             }, 1500);
         }
 
