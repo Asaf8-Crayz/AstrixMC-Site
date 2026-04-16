@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstrixMC - Minecraft Server</title>
+    <title>AstrixMC Minecraft Server</title>
     <style>
         * {
             margin: 0;
@@ -14,14 +14,14 @@
         body {
             font-family: 'Arial', sans-serif;
             background: #000000;
-            color: #FF0000;
+            color: #4A90E2;
             min-height: 100vh;
         }
         
         header {
-            background: #CC0000;
+            background: #0052A3;
             padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(74, 144, 226, 0.3);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -59,7 +59,7 @@
         }
         
         .nav-links a:hover {
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         .auth-buttons {
@@ -69,7 +69,7 @@
         
         button {
             padding: 10px 20px;
-            border: 2px solid #FF0000;
+            border: 2px solid #4A90E2;
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
@@ -79,22 +79,22 @@
         
         .btn-login {
             background: transparent;
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         .btn-login:hover {
-            background: #FF0000;
+            background: #4A90E2;
             color: #000000;
             transform: translateY(-2px);
         }
         
         .btn-register {
-            background: #FF0000;
+            background: #4A90E2;
             color: #000000;
         }
         
         .btn-register:hover {
-            background: #CC0000;
+            background: #0074D9;
             transform: translateY(-2px);
         }
         
@@ -106,8 +106,8 @@
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.5);
-            color: #FF0000;
+            text-shadow: 2px 2px 8px rgba(74, 144, 226, 0.5);
+            color: #4A90E2;
         }
         
         .hero p {
@@ -117,8 +117,8 @@
         }
         
         .server-info {
-            background: rgba(204, 0, 0, 0.1);
-            border: 2px solid #FF0000;
+            background: rgba(74, 144, 226, 0.1);
+            border: 2px solid #4A90E2;
             padding: 30px;
             border-radius: 10px;
             max-width: 600px;
@@ -128,7 +128,7 @@
         
         .server-ip {
             background: rgba(0, 0, 0, 0.5);
-            border: 1px solid #FF0000;
+            border: 1px solid #4A90E2;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -142,11 +142,11 @@
             font-size: 24px;
             font-weight: bold;
             font-family: 'Courier New', monospace;
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         .btn-copy {
-            background: #FF0000;
+            background: #4A90E2;
             color: #000000;
             padding: 10px 20px;
             border: none;
@@ -158,7 +158,7 @@
         }
         
         .btn-copy:hover {
-            background: #CC0000;
+            background: #0074D9;
             transform: translateY(-2px);
         }
         
@@ -182,7 +182,7 @@
         .player-count {
             font-size: 32px;
             font-weight: bold;
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         .player-label {
@@ -195,7 +195,7 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            background: #FF0000;
+            background: #4A90E2;
             border-radius: 50%;
             margin-right: 8px;
             animation: pulse 2s infinite;
@@ -225,13 +225,13 @@
         
         .modal-content {
             background: #1a1a1a;
-            border: 2px solid #FF0000;
+            border: 2px solid #4A90E2;
             margin: 10% auto;
             padding: 30px;
             border-radius: 10px;
             width: 90%;
             max-width: 400px;
-            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(74, 144, 226, 0.3);
             animation: slideIn 0.3s;
         }
         
@@ -247,7 +247,7 @@
         }
         
         .close {
-            color: #FF0000;
+            color: #4A90E2;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -261,7 +261,7 @@
         
         .modal h2 {
             margin-bottom: 20px;
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         .form-group {
@@ -272,7 +272,7 @@
             display: block;
             margin-bottom: 5px;
             font-size: 14px;
-            color: #FF0000;
+            color: #4A90E2;
         }
         
         input[type="text"],
@@ -280,10 +280,10 @@
         input[type="password"] {
             width: 100%;
             padding: 12px;
-            border: 1px solid #FF0000;
+            border: 1px solid #4A90E2;
             border-radius: 5px;
             background: #2a2a2a;
-            color: #FF0000;
+            color: #4A90E2;
             font-size: 14px;
             transition: border-color 0.3s;
         }
@@ -293,13 +293,13 @@
         input[type="password"]:focus {
             outline: none;
             border-color: #FFFFFF;
-            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
         }
         
         .form-group button {
             width: 100%;
             padding: 12px;
-            background: #FF0000;
+            background: #4A90E2;
             color: #000000;
             border: none;
             border-radius: 5px;
@@ -310,7 +310,7 @@
         }
         
         .form-group button:hover {
-            background: #CC0000;
+            background: #0074D9;
             transform: translateY(-2px);
         }
         
@@ -322,7 +322,7 @@
         }
         
         .form-footer a {
-            color: #FF0000;
+            color: #4A90E2;
             cursor: pointer;
             text-decoration: underline;
         }
@@ -332,11 +332,11 @@
         }
         
         footer {
-            background: #CC0000;
+            background: #0052A3;
             padding: 40px 20px;
             text-align: center;
             margin-top: 60px;
-            border-top: 2px solid #FF0000;
+            border-top: 2px solid #4A90E2;
         }
         
         .footer-content {
@@ -353,14 +353,14 @@
         }
         
         .footer-links a {
-            color: #000000;
+            color: #FFFFFF;
             text-decoration: none;
             transition: color 0.3s;
             font-weight: bold;
         }
         
         .footer-links a:hover {
-            color: #FFFFFF;
+            color: #4A90E2;
         }
         
         .social-links {
@@ -373,7 +373,7 @@
         .social-links a {
             width: 40px;
             height: 40px;
-            background: #FF0000;
+            background: #4A90E2;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -393,7 +393,7 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #FF0000;
+            background: #4A90E2;
             color: #000000;
             padding: 15px 20px;
             border-radius: 5px;
@@ -468,7 +468,7 @@
             <p>Minecraft Sunucusunda Eğlen, Kazan, Kazanıştır!</p>
             
             <div class="server-info">
-                <h3 style="margin-bottom: 20px; color: #FF0000;">Sunucuya Bağlan</h3>
+                <h3 style="margin-bottom: 20px; color: #4A90E2;">Sunucuya Bağlan</h3>
                 
                 <div class="server-ip">
                     <span class="ip-text">astrixmc.mcsvtr.online</span>
@@ -479,7 +479,7 @@
                     <div class="player-stat">
                         <div>
                             <span class="status-indicator"></span>
-                            <span style="font-size: 18px; color: #FF0000;">ONLINE</span>
+                            <span style="font-size: 18px; color: #4A90E2;">ONLINE</span>
                         </div>
                         <div class="player-label">Sunucu Durumu</div>
                     </div>
@@ -504,193 +504,5 @@
             <span class="close" onclick="closeLoginModal()">&times;</span>
             <h2>🔐 Giriş Yap</h2>
             <form onsubmit="handleLogin(event)">
-                <div class="form-group">
-                    <label for="login-email">E-posta veya Kullanıcı Adı:</label>
-                    <input type="text" id="login-email" placeholder="example@mail.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="login-password">Şifre:</label>
-                    <input type="password" id="login-password" placeholder="••••••••" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Giriş Yap</button>
-                </div>
-                <div class="form-footer">
-                    Hesabın yok mu? <a onclick="switchToRegister()">Kayıt ol</a>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Register Modal -->
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeRegisterModal()">&times;</span>
-            <h2>📝 Kayıt Ol</h2>
-            <form onsubmit="handleRegister(event)">
-                <div class="form-group">
-                    <label for="reg-username">Kullanıcı Adı:</label>
-                    <input type="text" id="reg-username" placeholder="Oyuncu Adı" required>
-                </div>
-                <div class="form-group">
-                    <label for="reg-email">E-posta:</label>
-                    <input type="email" id="reg-email" placeholder="example@mail.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="reg-password">Şifre:</label>
-                    <input type="password" id="reg-password" placeholder="••••••••" required>
-                </div>
-                <div class="form-group">
-                    <label for="reg-password-confirm">Şifre Tekrar:</label>
-                    <input type="password" id="reg-password-confirm" placeholder="••••••••" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Kayıt Ol</button>
-                </div>
-                <div class="form-footer">
-                    Zaten hesabın var mı? <a onclick="switchToLogin()">Giriş yap</a>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Notification -->
-    <div class="notification" id="notification"></div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Ana Sayfa</a>
-                <a href="#">Kurallar</a>
-                <a href="#">Destek</a>
-                <a href="#">Gizlilik Politikası</a>
-                <a href="#">İletişim</a>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://discord.com" target="_blank" title="Discord">💬</a>
-                <a href="https://youtube.com" target="_blank" title="YouTube">📺</a>
-                <a href="https://twitter.com" target="_blank" title="Twitter">𝕏</a>
-            </div>
-            
-            <p style="color: #000000; font-weight: bold;">&copy; 2026 AstrixMC. Tüm Hakları Saklıdır.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Modal Functions
-        function openLoginModal() {
-            document.getElementById('loginModal').style.display = 'block';
-        }
-
-        function closeLoginModal() {
-            document.getElementById('loginModal').style.display = 'none';
-        }
-
-        function openRegisterModal() {
-            document.getElementById('registerModal').style.display = 'block';
-        }
-
-        function closeRegisterModal() {
-            document.getElementById('registerModal').style.display = 'none';
-        }
-
-        function switchToLogin() {
-            closeRegisterModal();
-            openLoginModal();
-        }
-
-        function switchToRegister() {
-            closeLoginModal();
-            openRegisterModal();
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            let loginModal = document.getElementById('loginModal');
-            let registerModal = document.getElementById('registerModal');
-            
-            if (event.target === loginModal) {
-                loginModal.style.display = 'none';
-            }
-            if (event.target === registerModal) {
-                registerModal.style.display = 'none';
-            }
-        }
-
-        // Copy IP Function
-        function copyIP() {
-            const ip = 'astrixmc.mcsvtr.online';
-            navigator.clipboard.writeText(ip).then(() => {
-                const btn = event.target;
-                btn.textContent = '✓ Kopyalandı!';
-                btn.classList.add('copied');
-                
-                setTimeout(() => {
-                    btn.textContent = '📋 Kopyala';
-                    btn.classList.remove('copied');
-                }, 2000);
-            });
-        }
-
-        // Form Handlers
-        function handleLogin(event) {
-            event.preventDefault();
-            const email = document.getElementById('login-email').value;
-            const password = document.getElementById('login-password').value;
-            
-            showNotification(`${email} olarak giriş yapılıyor...`);
-            closeLoginModal();
-            
-            setTimeout(() => {
-                showNotification(`Hoş geldiniz! ✓`);
-            }, 1500);
-        }
-
-        function handleRegister(event) {
-            event.preventDefault();
-            const username = document.getElementById('reg-username').value;
-            const email = document.getElementById('reg-email').value;
-            const password = document.getElementById('reg-password').value;
-            const confirmPassword = document.getElementById('reg-password-confirm').value;
-            
-            if (password !== confirmPassword) {
-                showNotification('⚠️ Şifreler eşleşmiyor!');
-                return;
-            }
-            
-            showNotification(`${username} olarak kayıt oluşturuluyor...`);
-            closeRegisterModal();
-            
-            setTimeout(() => {
-                showNotification(`Kayıt başarılı! Hoş geldiniz 🎉`);
-            }, 1500);
-        }
-
-        // Notification Function
-        function showNotification(message) {
-            const notification = document.getElementById('notification');
-            notification.textContent = message;
-            notification.style.display = 'block';
-            
-            setTimeout(() => {
-                notification.style.display = 'none';
-            }, 4000);
-        }
-
-        // Scroll to section
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Simulate live player count
-        function updatePlayerCount() {
-            const count = Math.floor(Math.random() * 50) + 5;
-            document.getElementById('player-count').textContent = count;
-        }
-
-        updatePlayerCount();
-        setInterval(updatePlayerCount, 30000);
-    </script>
-</body>
-</html>
+                <div*
+
